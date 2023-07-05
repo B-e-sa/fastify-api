@@ -1,0 +1,23 @@
+{
+  "name": "ruby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts --respawn --inspect",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration:create": "typeorm-ts-node-commonjs migration:create src/shared/infra/typeorm/migrations"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.19.2",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  }
+}
